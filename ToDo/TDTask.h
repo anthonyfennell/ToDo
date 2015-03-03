@@ -2,7 +2,7 @@
 //  TDTask.h
 //  ToDo
 //
-//  Created by Anthony Fennell on 2/20/15.
+//  Created by Anthony Fennell on 3/2/15.
 //  Copyright (c) 2015 Anthony Fennell. All rights reserved.
 //
 
@@ -12,9 +12,10 @@
 
 @interface TDTask : NSManagedObject
 
+@property (nonatomic) BOOL isComplete;
+@property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSString * note;
 @property (nonatomic, retain) NSDate * timestamp;
-@property (nonatomic, retain) NSString * label;
-@property (nonatomic) BOOL isComplete;
+@property (nonatomic, retain) NSDate * completionDate;
 
 @end

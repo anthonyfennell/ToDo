@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TDTasksViewController.h
 //  ToDo
 //
 //  Created by Anthony Fennell on 2/20/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TDTasksViewController : UIViewController
 
 
 @end

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="Xwb-JG-Ayv" customClass="TDTaskTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xwb-JG-Ayv" id="zso-pL-4XH">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZh-hf-5gn">
+                        <rect key="frame" x="8" y="9" width="264" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-4p-CvR">
+                        <rect key="frame" x="8" y="28" width="264" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VZh-hf-5gn" firstAttribute="top" secondItem="zso-pL-4XH" secondAttribute="topMargin" constant="1" id="55h-Cr-D14"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gxQ-4p-CvR" secondAttribute="bottom" constant="-2" id="6Bn-Xs-pIw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VZh-hf-5gn" secondAttribute="trailing" constant="40" id="8mu-Yh-crb"/>
+                    <constraint firstItem="gxQ-4p-CvR" firstAttribute="leading" secondItem="zso-pL-4XH" secondAttribute="leadingMargin" id="MXF-UC-bPX"/>
+                    <constraint firstItem="VZh-hf-5gn" firstAttribute="leading" secondItem="gxQ-4p-CvR" secondAttribute="leading" id="Ncu-hG-99e"/>
+                    <constraint firstItem="gxQ-4p-CvR" firstAttribute="top" secondItem="zso-pL-4XH" secondAttribute="topMargin" constant="20" id="gLs-yd-XVN"/>
+                    <constraint firstItem="gxQ-4p-CvR" firstAttribute="trailing" secondItem="VZh-hf-5gn" secondAttribute="trailing" id="njx-x9-X2p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="VZh-hf-5gn" id="Pjm-Su-3O2"/>
+                <outlet property="note" destination="gxQ-4p-CvR" id="bjv-hM-AWq"/>
+            </connections>
+            <point key="canvasLocation" x="477" y="253.5"/>
+        </tableViewCell>
+    </objects>
+</document>

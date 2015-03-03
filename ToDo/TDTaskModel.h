@@ -7,13 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class TDTask;
+#import "TDTask.h"
 
 @interface TDTaskModel : NSObject
 
 + (instancetype)sharedModel;
 
+/// Create a task
 - (TDTask *)createTaskNote:(NSString *)note label:(NSString *)label;
+/// Remove a task
+- (void)removeTaskNote:(TDTask *)task;
+
+/// All Tasks in order by completion date
+- (NSArray *)allTasks;
+
+/// Save changes to CoreData
+- (void)saveChanges;
+
 
 @end

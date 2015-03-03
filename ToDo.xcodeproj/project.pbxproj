@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		8FB782D81A97C48C00FE76DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB782D71A97C48C00FE76DE /* main.m */; };
 		8FB782DB1A97C48C00FE76DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB782DA1A97C48C00FE76DE /* AppDelegate.m */; };
-		8FB782DE1A97C48C00FE76DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB782DD1A97C48C00FE76DE /* ViewController.m */; };
+		8FB782DE1A97C48C00FE76DE /* TDTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB782DD1A97C48C00FE76DE /* TDTasksViewController.m */; };
 		8FB782E11A97C48C00FE76DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB782DF1A97C48C00FE76DE /* Main.storyboard */; };
 		8FB782E31A97C48C00FE76DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB782E21A97C48C00FE76DE /* Images.xcassets */; };
 		8FB782E61A97C48C00FE76DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB782E41A97C48C00FE76DE /* LaunchScreen.xib */; };
 		8FB782F21A97C48C00FE76DE /* ToDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB782F11A97C48C00FE76DE /* ToDoTests.m */; };
 		8FB782FE1A97C4C200FE76DE /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FB782FC1A97C4C200FE76DE /* ToDo.xcdatamodeld */; };
-		8FB783011A97C64000FE76DE /* TDTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB783001A97C64000FE76DE /* TDTask.m */; };
 		8FB783051A97C67300FE76DE /* TDTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB783041A97C67300FE76DE /* TDTaskModel.m */; };
+		8FDC72741AA4F19D00C7AEAC /* TDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC72731AA4F19D00C7AEAC /* TDDetailViewController.m */; };
+		8FDC72771AA4F37E00C7AEAC /* TDTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC72761AA4F37E00C7AEAC /* TDTask.m */; };
+		8FDC727A1AA4F58100C7AEAC /* TDTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDC72791AA4F58100C7AEAC /* TDTaskTableViewCell.xib */; };
+		8FDC727D1AA4F59D00C7AEAC /* TDTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC727C1AA4F59D00C7AEAC /* TDTaskTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,8 @@
 		8FB782D71A97C48C00FE76DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FB782D91A97C48C00FE76DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FB782DA1A97C48C00FE76DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8FB782DC1A97C48C00FE76DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8FB782DD1A97C48C00FE76DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8FB782DC1A97C48C00FE76DE /* TDTasksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTasksViewController.h; sourceTree = "<group>"; };
+		8FB782DD1A97C48C00FE76DE /* TDTasksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTasksViewController.m; sourceTree = "<group>"; };
 		8FB782E01A97C48C00FE76DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FB782E21A97C48C00FE76DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8FB782E51A97C48C00FE76DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,10 +47,15 @@
 		8FB782F01A97C48C00FE76DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB782F11A97C48C00FE76DE /* ToDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoTests.m; sourceTree = "<group>"; };
 		8FB782FD1A97C4C200FE76DE /* ToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo.xcdatamodel; sourceTree = "<group>"; };
-		8FB782FF1A97C64000FE76DE /* TDTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTask.h; sourceTree = "<group>"; };
-		8FB783001A97C64000FE76DE /* TDTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTask.m; sourceTree = "<group>"; };
 		8FB783031A97C67300FE76DE /* TDTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTaskModel.h; sourceTree = "<group>"; };
 		8FB783041A97C67300FE76DE /* TDTaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTaskModel.m; sourceTree = "<group>"; };
+		8FDC72721AA4F19D00C7AEAC /* TDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDetailViewController.h; sourceTree = "<group>"; };
+		8FDC72731AA4F19D00C7AEAC /* TDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDetailViewController.m; sourceTree = "<group>"; };
+		8FDC72751AA4F37E00C7AEAC /* TDTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTask.h; sourceTree = "<group>"; };
+		8FDC72761AA4F37E00C7AEAC /* TDTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTask.m; sourceTree = "<group>"; };
+		8FDC72791AA4F58100C7AEAC /* TDTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDTaskTableViewCell.xib; sourceTree = "<group>"; };
+		8FDC727B1AA4F59D00C7AEAC /* TDTaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTaskTableViewCell.h; sourceTree = "<group>"; };
+		8FDC727C1AA4F59D00C7AEAC /* TDTaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTaskTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,13 +99,13 @@
 			children = (
 				8FB782D91A97C48C00FE76DE /* AppDelegate.h */,
 				8FB782DA1A97C48C00FE76DE /* AppDelegate.m */,
-				8FB782DC1A97C48C00FE76DE /* ViewController.h */,
-				8FB782DD1A97C48C00FE76DE /* ViewController.m */,
-				8FB783021A97C65F00FE76DE /* Model */,
-				8FB782FB1A97C4B000FE76DE /* MOGEN */,
-				8FB782DF1A97C48C00FE76DE /* Main.storyboard */,
 				8FB782E21A97C48C00FE76DE /* Images.xcassets */,
 				8FB782E41A97C48C00FE76DE /* LaunchScreen.xib */,
+				8FB782DF1A97C48C00FE76DE /* Main.storyboard */,
+				8FDC72711AA4ECA300C7AEAC /* View Controllers */,
+				8FDC72781AA4F55C00C7AEAC /* Table View Cells */,
+				8FB783021A97C65F00FE76DE /* Model */,
+				8FB782FB1A97C4B000FE76DE /* MOGEN */,
 				8FB782D51A97C48C00FE76DE /* Supporting Files */,
 			);
 			path = ToDo;
@@ -132,9 +140,9 @@
 		8FB782FB1A97C4B000FE76DE /* MOGEN */ = {
 			isa = PBXGroup;
 			children = (
-				8FB782FF1A97C64000FE76DE /* TDTask.h */,
-				8FB783001A97C64000FE76DE /* TDTask.m */,
 				8FB782FC1A97C4C200FE76DE /* ToDo.xcdatamodeld */,
+				8FDC72751AA4F37E00C7AEAC /* TDTask.h */,
+				8FDC72761AA4F37E00C7AEAC /* TDTask.m */,
 			);
 			name = MOGEN;
 			sourceTree = "<group>";
@@ -146,6 +154,27 @@
 				8FB783041A97C67300FE76DE /* TDTaskModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		8FDC72711AA4ECA300C7AEAC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FB782DC1A97C48C00FE76DE /* TDTasksViewController.h */,
+				8FB782DD1A97C48C00FE76DE /* TDTasksViewController.m */,
+				8FDC72721AA4F19D00C7AEAC /* TDDetailViewController.h */,
+				8FDC72731AA4F19D00C7AEAC /* TDDetailViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8FDC72781AA4F55C00C7AEAC /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8FDC727B1AA4F59D00C7AEAC /* TDTaskTableViewCell.h */,
+				8FDC727C1AA4F59D00C7AEAC /* TDTaskTableViewCell.m */,
+				8FDC72791AA4F58100C7AEAC /* TDTaskTableViewCell.xib */,
+			);
+			name = "Table View Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDC727A1AA4F58100C7AEAC /* TDTaskTableViewCell.xib in Resources */,
 				8FB782E11A97C48C00FE76DE /* Main.storyboard in Resources */,
 				8FB782E61A97C48C00FE76DE /* LaunchScreen.xib in Resources */,
 				8FB782E31A97C48C00FE76DE /* Images.xcassets in Resources */,
@@ -249,9 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB783051A97C67300FE76DE /* TDTaskModel.m in Sources */,
-				8FB782DE1A97C48C00FE76DE /* ViewController.m in Sources */,
+				8FDC72771AA4F37E00C7AEAC /* TDTask.m in Sources */,
+				8FDC727D1AA4F59D00C7AEAC /* TDTaskTableViewCell.m in Sources */,
+				8FB782DE1A97C48C00FE76DE /* TDTasksViewController.m in Sources */,
 				8FB782DB1A97C48C00FE76DE /* AppDelegate.m in Sources */,
-				8FB783011A97C64000FE76DE /* TDTask.m in Sources */,
+				8FDC72741AA4F19D00C7AEAC /* TDDetailViewController.m in Sources */,
 				8FB782D81A97C48C00FE76DE /* main.m in Sources */,
 				8FB782FE1A97C4C200FE76DE /* ToDo.xcdatamodeld in Sources */,
 			);
@@ -444,6 +476,7 @@
 				8FB782F71A97C48C00FE76DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FB782F81A97C48C00FE76DE /* Build configuration list for PBXNativeTarget "ToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +485,7 @@
 				8FB782FA1A97C48C00FE76DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
